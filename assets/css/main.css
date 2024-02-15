@@ -163,6 +163,7 @@ main > section.active {
 
 #home {
   height: 100vh;
+  background-image: url("/assets/images/mother.jpg");
 }
 #home .intro {
   padding-top: 115px;
