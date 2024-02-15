@@ -1,0 +1,126 @@
+#features { 
+  text-align: center;
+  margin-top: 5%;
+  // ul {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+    
+  //   li {
+  //     margin-right: 10px;
+  //     list-style: none;
+
+  //     a {
+  //         display: flex;
+  //         text-decoration: none;
+  //         align-items: center;
+  //         padding: 9px;
+  //         span {
+  //           color: $secondary_gray;
+  //           font-weight: bold;
+  //         }
+          
+  //         &:hover {
+  //           span {
+  //             color: #ffff;
+  //           }
+  //         }
+  //       }
+  //   }
+  // }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .project-card {
+    margin: 12px 0px;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      .project-pic {
+        filter: brightness(0.7);
+      }
+      .dark-overlay {
+        opacity: 1;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .project-pic {
+    width: 100%;
+    height: 270px;
+    // border-radius: 5px;
+    transition: filter 0.3s;
+  }
+  .dark-overlay {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 4, 32, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s, top 0.3s, left 0.3s;
+    border: 4px solid $primary;
+    border-radius: 5px;
+
+    a {
+      color: #ffff;
+      font-size: 18px;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+
+  .project-card .dark-overlay {
+    transition: opacity 0.3s, top 0.5s, left 0.5s;
+  }
+
+  .card {
+
+    .card-img-top {
+      border-radius: 0%;
+      height: 267.64px;
+    }
+    .card-body {
+      text-align: start;
+
+      .card-title {
+        font-size: 18px;
+      }
+
+      .details {
+        display: flex;
+        font-size: 12px;
+        
+        .card-text {
+          span {
+            color: $secondary_gray;
+          }
+        }
+        .card-footer {
+          a {
+            text-decoration: none;
+            background: $secondary;
+            color: #ffff;
+            padding: 7px;
+            border-radius: 5px;
+          }
+        }
+      }
+  }
+  }
+}

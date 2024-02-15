@@ -1,0 +1,4 @@
+[submodule "maths-game"]
+	path = maths-game
+	url = https://github.com/Sicelumusa1/maths-game.git
+	branch = gh-pages

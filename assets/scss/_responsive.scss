@@ -1,0 +1,99 @@
+@media (max-width: 991px) {
+    #home {
+      .home-pp {
+        justify-content: start;
+        height: unset;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    }
+
+    #about_me {
+      .image {
+        justify-content: start;
+        height: unset;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    }
+}
+
+@media (max-width: 767px) {
+  #sidebar {
+    background: darken($secondary, 30%);
+    padding-right: 60px;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+    z-index: 10;
+
+    &.open {
+      transform: translateX(0);
+    }
+
+    &.close {
+      transform: translateX(-100%);
+    }
+
+    .toggle-sidebar {
+      display: flex;
+    }
+
+    .mylogo {
+      text-align: left;
+      padding-left: 40px;
+    }
+
+    nav ul li {
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+          span {
+            display: block;
+            padding-left: 8px;
+        }
+      }
+
+      > span {
+        display: none;
+      } 
+    }
+  
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2, h3, 
+  h4 {
+    font-size: 14px;
+  }
+
+  main {
+    padding-left: 0;
+    padding-top: 50px;
+
+    > section {
+      padding-right: 32px;
+      padding-left: 32px;
+    } 
+  }
+
+  #home {
+    .intro {
+      padding-top: 80px;
+
+      .study-field {
+        margin: 0px 0px 14px;
+      }
+    }
+  }
+
+  #my_resume {
+    .school, .work {
+        overflow: hidden;
+    }
+  }
+
+}

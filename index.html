@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <div id="navigation">
+    <div class="toggle-sidebar">
+      <i class="las la-bars"></i>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#home" class="active">
+            <i class="las la-home"></i> 
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#features">
+            <i class="las la-briefcase"></i>
+            <span>Key Features</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about">
+            <i class="las la-address-card"></i>
+            <span>About</span>
+          </a>
+        </li>       
+        <li>
+          <a href="#contact_me">
+            <i class="las la-phone"></i>
+            <span>Contact Me</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <div class="star"></div>
+    </div>
+    <section id="home" class="active">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 intro">
+            <h4>Community Rating And Empowerment Platform</h4>
+            <div class="project-title">
+              <h4></h4>
+            </div>
+            <p>
+              Rates ward councilors based on service delivery, holding them accountable.
+            </p>
+            <a  class="customise-btn" href="https://crep-505fc.web.app/">
+              Open The App
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 image">
+            <img src="assets/images/DSC_0009.JPG" alt="">
+          </div>
+          <div class="col-lg-12 info">
+            <h2>Community Rating And Empowerment Platform(CREP)</h2>
+            <h3>This project was inspired by the:</h3> 
+              <ul>
+                <li>Insurgence of corruption and lack of service delivery in local government.</li>
+                <li>Limited avenues for citizens to:
+                  <ul>
+                    <li>Provide feedback</li>
+                    <li>Hold elected officials accountable</li>
+                  </ul>
+                </li>
+              </ul>
+              <h3>The objective was to:</h3>
+              <ul>
+                <li>Develop a Citizen Rating App that allows residents to rate and review ward councilors.</li>
+                <li>Implement measures to ensure integrity and authenticity of user ratings.</li>
+                <li>Contribute to increased transparency  and accountability in local government.</li>
+              </ul>
+          </div>
+          <div class="socials">
+            <ul>
+              <li>
+                <a href="https://github.com/Sicelumusa1/crep-deskop">
+                  <i class="las la-briefcase"></i>
+                  <span>Portfolio Project Frontend</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/sicelumusa-gabuza-5707a265/">
+                  <i class="lab la-linkedin"></i>
+                  <span>linkedin</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Sicelumusa1">
+                  <i class="lab la-github"></i>
+                  <span>github</span>
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://github.com/Sicelumusa1/Local-Government-Evaluator-Backend">
+                  <i class="las la-briefcase"></i>
+                  <span>Portfolio Project Backend</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="features">
+      <h1>Key Features</h1>
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-9 project-card">
+                  <div class="list-group shadow-sm text-bg-dark mb-3">
+                    <div class="list-group-item active">Home Page</div>
+                    <img class="project-pic" src="assets/images/Home.jpg" alt="">
+                    <a 
+                      href="#" 
+                      class="list-group-item list-group-item-action"
+                      data-bs-toggle="modal"
+                      data-bs-target="#home_page">
+                      View
+                    </a>
+                  </div>
+            </div>
+            
+              <!--Home Page Modal-->
+              <div 
+                  class="modal fade"
+                  id="home_page"
+                  data-bs-backdrop="static"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  style="backdrop-filter: blur(5px);">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header text-bg-dark">
+                      <h5 class="modal-title"></h5>
+                      <button 
+                        type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                      <div class="card text-bg-dark">
+                        <!-- <img class="card-img-top" src="assets/images/Simple_Shell.png" alt="Simple Shell"> -->
+                        <div class="card-body">
+                          <h5 class="card-title">Home Page</h5>
+                          <div class="details">
+                            <div class="card-text">
+                              <p> <strong>The Home Page has:</strong></p>
+                              <ul>
+                                <li> <strong>Two carousels:</strong>  
+                                  <ul>
+                                    <li>Best Rated Councilors</li>
+                                    <li>Worst Rated Councilors</li> <br/>
+                                  </ul>
+                                  <p>Here a user will discover the top-performing councilors with exceptional ratings of 4 and above, and gain insights into areas for improvement by exploring councilors with ratings below 3.</p>
+                                </li>
+                                <li>
+                                  <p> <strong>User Education Cards:</strong> </p>
+                                  <p>Navigate through the app effortlessly with our user education cards, which provide clear instructions on how to create a free account, explore councilors from any ward nationwide, and contribute their ratings and feedback.</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-footer">
+                          <a href="https://crep-505fc.web.app/">
+                            <i class="las la-link"></i>
+                            Project Link
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Signup Page-->
+            <div class="col-lg-9 project-card">
+              <div class="list-group shadow-sm small text-bg-dark mb-3">
+                <div class="list-group-item active">Signup Page</div>
+                <img class="project-pic" src="assets/images/register.png" alt="">
+                <a 
+                  href="#" 
+                  class="list-group-item list-group-item-action"
+                  data-bs-toggle="modal"
+                  data-bs-target="#signup">
+                  View
+                </a>
+              </div>
+            </div>
+              <!--Project Details Modal-->
+              <div 
+                  class="modal fade"
+                  id="signup"
+                  data-bs-backdrop="static"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  style="backdrop-filter: blur(5px);">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header text-bg-dark">
+                      <h5 class="modal-title"></h5>
+                      <button 
+                        type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                      <div class="card text-bg-dark">
+                        <div class="card-body">
+                          <h5 class="card-title">Signup Page</h5>
+                          <div class="details">
+                            <div class="card-text">
+                              <p><strong>The Signup page features a comprehensive registration form consisting of 10 field. This form collects user personal information, which is essential for mapping them to their specific councilor which they will be able to rate.</strong></p> <br />
+                              <ul>
+                                <li>Place/Area:</li> <br/>
+                                <p>This field requires users' exact place of residence, ensuring accurate localization within their community</p>
+                                <li>Email Address:</li> <br/>
+                                <p>The user must ensure their valid email address, as a OneTimePin(OTP) will be sent to this email upon registration. They will use this unique <strong>pin</strong> to verify and activate their account</p>
+                                <li>The dropdowns:</li> <br/>
+                                <p>User must utilize these dropdown menus to select their Province, Municipality and Ward Number respectively. Pay special attention to the ward number dropdown, focusing on the <strong>last two digits</strong> to specify their precise location within their municipality.</p> <br/>
+                                <p>By providing these details accurately, they will gain access to a tailored experience within the app, enabling them to engage with their local councilor and contribute to the community-driven rating system effectively.</p>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-footer">
+                          <a href="https://crep-505fc.web.app/signup">
+                            <i class="las la-link"></i>
+                            Feature Link
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--My Councilor-->
+            <div id="AirBnB" class="col-lg-9 project-card">
+              <div class="list-group shadow-sm small text-bg-dark mb-3">
+                <div class="list-group-item active">My Councilor</div>
+                <img class="project-pic" src="assets/images/MyCouncilor.png" alt="">
+                <a 
+                  href="#" 
+                  class="list-group-item list-group-item-action"
+                  data-bs-toggle="modal"
+                  data-bs-target="#my_councilor">
+                  View
+                </a>
+              </div>
+            </div>
+              <!--My Councilor Modal-->
+              <div 
+                  class="modal fade"
+                  id="my_councilor"
+                  data-bs-backdrop="static"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  style="backdrop-filter: blur(5px);">
+                  <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header text-bg-dark">
+                      <h5 class="modal-title">My Councilor</h5>
+                      <button 
+                        type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                      <div class="card text-bg-dark">
+                        <!-- <img class="card-img-top" src="assets/images/AirBnB.png" alt="AirBnB"> -->
+                        <div class="card-body">
+                          <h5 class="card-title">My Councilor</h5>
+                          <div class="details">
+                            <div class="card-text">
+                              <h6>This feature has 3 dropdowns</h6>
+                              <ul>
+                                <li>Provinces:
+                                  <p>This is where a user selects the province they want to explore</p>
+                                </li>
+                                <li>Municipalities:
+                                  <p>This is where a user selects the municipality they want to explore. Selecting a municipality will yield a table of all the wards with respective councilors under that municipality. All the details including the average ratings are displayed.</p>
+                                </li>
+                                <li>Wards:
+                                  <p>Selecting a ward number yields the details of the councilor of that specific ward. This also comes with the rating form. On the rating form a user can select the service on which they wish to rate the councilor. The user will then select the number of stars they wish to give the councilor on the selected service. Submit will send the rating.</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-footer">
+                          <a href="https://crep-505fc.web.app/my-councilor">
+                           <i class="las la-link"></i>
+                            Feature Link
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact_me">
+      <h1>Contact Me</h1>
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-lg-6">
+              <form action="get">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="u_name" placeholder="Name" autofocus>
+                  <label for="u_name">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="u_mail" placeholder="youremail@mail.com">
+                  <label for="u_mail">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="u_subject" placeholder="Subject">
+                  <label for="u_subject">Subject</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <textarea type="textarea" aria-rowcount="5" class="form-control" id="message" rows="5" placeholder="message"></textarea>
+                  <label for="message">Message</label>
+                </div>
+                <div>
+                  <button type="submit" class="btn btn-small">Send Message</button>
+                </div>
+              </form>
+          </div> -->
+          <div class="col-lg-12">
+            <ul>
+              <li>
+               <div class="col-3">
+                <i class="las la-phone"></i>
+               </div>
+                <div class="col-9">
+                  <p>Phone Number:</p><span>079 832 1909</span>
+                </div>
+              </li>
+              <li>
+               <div class="col-3">
+                <i class="las la-envelope"></i>
+               </div>
+               <div class="col-9">
+                <p>Email:</p><span>musaqwabe@gmail.com</span>
+               </div>
+              </li>
+              <li>
+                <div class="col-3">
+                  <i class="las la-map-marker"></i>
+                </div>
+                <div class="col-9">
+                  <p>Address:</p><span>501 Oupa Moeti Street, Tembisa, 1632</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

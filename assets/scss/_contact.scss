@@ -1,0 +1,68 @@
+#contact_me {
+  height: 100vh;
+
+  h1 {
+    text-align: center;
+    margin-top: 8%;
+  }
+
+  .container {
+    margin-top: 8%;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+        li {
+          display: flex;
+          margin-bottom: 45px;
+          align-items: center;
+        
+          .col-9 {
+            position: absolute;
+            white-space: nowrap;
+            padding-left: 30px;
+  
+            p, span {
+              margin-bottom: 0px;
+              font-size: 14px;
+            }
+
+            span {
+              color: $secondary_gray;
+            }
+          }
+
+          .col-3 {
+            i {
+              font-size: 18px;
+              color: $gray;
+
+              &:hover {
+                  color: #fff;
+              }
+           }
+          }
+        }
+      }   
+
+    form {
+      background: transparent;
+      min-width: 300px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+
+      .form-floating {
+        border: none;
+        border-bottom: 2px solid #000;
+        border-radius: 0px;
+        width: 100%;
+        background: transparent;
+        color: $gray;
+      }
+
+      button {
+        background: #262F48;
+      }
+    }
+  }
+}
